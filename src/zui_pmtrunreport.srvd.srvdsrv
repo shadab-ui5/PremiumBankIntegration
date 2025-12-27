@@ -1,0 +1,4 @@
+@EndUserText.label: 'Payment Run Report Service'
+define service ZUI_PmtRunReport {
+  expose ZI_PmtRunReport as PaymentRunReport;
+}

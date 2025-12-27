@@ -1,0 +1,27 @@
+projection;
+strict;
+use draft;
+use side effects;
+define behavior for ZC_CompanyCodeAndUserC_S alias CompanyCodeAndUsAll
+{
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+  use action SelectCustomizingTransptReq;
+
+  use association _CompanyCodeAndUserC { create; with draft; }
+
+}
+
+define behavior for ZC_CompanyCodeAndUserC alias CompanyCodeAndUserC
+{
+  use update;
+  use delete;
+
+  use action Copy;
+
+  use association _CompanyCodeAndUsAll { with draft; }
+
+}

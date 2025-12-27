@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZC_CompanyCodeAndUserC_S'
+define service ZUI_COMPANYCODEANDUSERC {
+  expose ZC_CompanyCodeAndUserC_S as CompanyCodeAndUsAll;
+  expose ZC_CompanyCodeAndUserC   as CompanyCodeAndUserC;
+}

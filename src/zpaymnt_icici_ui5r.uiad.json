@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "ICICI Payment Run File - ZICICI"
+  },
+  "ui5AppDetails": {
+    "appId": "pmnt.paymentrunreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FA08360CC6815F03921C4B0BFEB342650320A6FB_TM",
+    "semanticObject": "paymentrunreport",
+    "action": "managed",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FA08360CC6815F03921C4B0BFEB342650320A6FB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ICICI Payment Run File - ZICICI"
+      }
+    }
+  ]
+}

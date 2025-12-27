@@ -1,0 +1,51 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'CompanyCodeAndUserC',
+    typeNamePlural: 'CompanyCodeAndUserCs',
+    title: {
+      type: #STANDARD,
+      label: 'company code and user configuration',
+      value: 'Companycode'
+    }
+  }
+}
+annotate view ZC_CompanyCodeAndUserC with
+{
+  @UI.identification: [ {
+    position: 1
+  } ]
+  @UI.lineItem: [ {
+    position: 1
+  },
+  {
+    type: #FOR_ACTION,
+    dataAction: 'Copy',
+    label: 'Copy Selected Entry',
+    invocationGrouping: #CHANGE_SET
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_CompanyCodeAndUserC',
+    purpose: #STANDARD,
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'company code and user configuration',
+    position: 1
+  } ]
+  Companycode;
+
+  @UI.identification: [ {
+    position: 2
+  } ]
+  @UI.lineItem: [ {
+    position: 2
+  } ]
+  Userid;
+
+  @UI.identification: [ {
+    position: 3
+  } ]
+  @UI.lineItem: [ {
+    position: 3
+  } ]
+  Createdon;
+}

@@ -1,0 +1,5 @@
+@MappingRole: true
+define role ZC_CompanyCodeAndUserC {
+  grant select on ZC_CompanyCodeAndUserC
+  where INHERITING CONDITIONS FROM ENTITY ZI_CompanyCodeAndUserC;
+}

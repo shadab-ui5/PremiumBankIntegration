@@ -1,0 +1,65 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "CLOUD_DEVELOPMENT_ATC",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "selectedChecks": [
+    {
+      "checkName": "SYCM_ALLOWED_ENH_TECHNOLOGY"
+    },
+    {
+      "checkName": "SYCM_USAGE_OF_APIS",
+      "parameters": [
+        {
+          "name": "releasedAPIDataSource",
+          "value": "checkedSystem"
+        },
+        {
+          "name": "classicAPIDataSource",
+          "value": "url(https://raw.githubusercontent.com/SAP/abap-atc-cr-cv-s4hc/refs/heads/main/src/objectClassifications_3TierModel.json)"
+        }
+      ]
+    },
+    {
+      "checkName": "SLIN_VERS",
+      "parameters": [
+        {
+          "name": "ABAPLanguageVersion",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "checkName": "SYCM_CHECK_ABAP_LANGU_VERSION"
+    },
+    {
+      "checkName": "SYCM_CLOUD_ALLOWED_OBJCT_TYPES"
+    },
+    {
+      "checkName": "SYCM_CLOUD_RELEASED_OBJECTS",
+      "parameters": [
+        {
+          "name": "ABAPLanguageVersion",
+          "value": "1"
+        },
+        {
+          "name": "URLObjectClassifications"
+        }
+      ]
+    },
+    {
+      "checkName": "SYCM_RELEASED_CLOUDIFIC_REPOS",
+      "parameters": [
+        {
+          "name": "Url",
+          "value": "https://raw.githubusercontent.com/SAP/abap-atc-cr-cv-s4hc/main/src/objectReleaseInfoLatest.json"
+        },
+        {
+          "name": "URLObjectClassifications"
+        }
+      ]
+    }
+  ]
+}
